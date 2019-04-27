@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int I,a,b,c,n;
+	cin>>I;
+	if(I>=100&&I<=999)
+	{a=I/100;
+	b=(I-a*100)/10;
+	c=I%10;
+	n=a*a*a+b*b*b+c*c*c;
+	if (I==n)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
+	}
+	else cout<<"NO"<<endl;
+	return 0;
+}
